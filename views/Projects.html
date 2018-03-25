@@ -1,0 +1,54 @@
+<!------ Projects ------>
+<hr>
+<div class='container' ng-controller='ProjectCntrl'>
+    <div class='row'>
+        <span id='project_title'>{{project.title}}</span><br>
+        <span id='project_content'>{{project.tagline}}</span>
+    </div>
+<br><br><hr>
+    <div class='row projects'>
+        <div class='col-md-6'>
+            <i class="fa fa-check-square-o fa-5x" aria-hidden="true"></i>
+            <div class='container preface' ng-repeat='pro in project_1'>
+                <span id='project_name'>{{pro.name}}</span><br>
+                <span id='projects_descp'>{{pro.descrp}}</span>
+            </div>
+        </div>
+        <div class='col-md-6'>
+            <i class="fa fa-check-square-o fa-5x" aria-hidden="true"></i>
+            <div class='container preface' ng-repeat='pro in project_2'>
+                <span id='project_name'>{{pro.name}}</span><br>
+                <span id='projects_descp'>{{pro.descrp}}</span>
+            </div>
+        </div>
+    </div><hr>
+    <div class='row projects'>
+        <div class='col-md-6'>
+            <i class="fa fa-check-square-o fa-5x" aria-hidden="true"></i>
+            <div class='container preface' ng-repeat='pro in project_3'>
+                <span id='project_name'>{{pro.name}}</span><br>
+                <span id='projects_descp'>{{pro.descrp}}</span>
+            </div>
+        </div>
+        <div class='col-md-6'>
+            <i class="fa fa-check-square-o fa-5x" aria-hidden="true"></i>
+            <div class='container preface' ng-repeat='pro in project_4'>
+                <span id='project_name'>{{pro.name}}</span><br>
+                <span id='projects_descp'>{{pro.descrp}}</span>
+            </div>
+        </div>
+    </div>
+</div>
+<hr>
+<div id=github>
+    <div class='col'>
+        <span>Want to check out more of my projects?<br>Click the button below.</span>
+    </div>
+    <div class='footer'>
+        <div class='col'>
+            <a href='https://github.com/Sachim89'>
+            <button class='btn btn-primary'>
+                <i class="fa fa-github fa-2x" aria-hidden="true"></i></button></a>
+        </div>
+    </div>
+</div> 

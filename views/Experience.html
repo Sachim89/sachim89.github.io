@@ -1,0 +1,28 @@
+<!------ Experience ------>
+<hr>
+<div class='container' ng-controller='ExpCntrl'>
+    <div class='row'>
+        <span id='exp_title'>{{experience.title}}</span><br>
+        <span id='exp_content'>{{experience.tagline}}</span>
+    </div>
+<br><br><hr>
+    <div class='row projects'>
+        <div class='col-md-6'>
+            <i class="fa fa-certificate fa-5x" aria-hidden="true"></i>
+            <div class='container exp' ng-repeat='ex in experience_1'>
+                <span id='exp_name'>{{ex.title}}</span><br><br>
+                <span id='exp_company'>{{ex.company}}<br>{{ex.year}}</span><br><br>
+                <span id='exp_descp'>{{ex.responsibilities}}</span>
+            </div>
+        </div>
+         <div class='col-md-6'>
+            <i class="fa fa-certificate fa-5x" aria-hidden="true"></i>
+            <div class='container exp' ng-repeat='ex in experience_2'>
+                <span id='exp_name'>{{ex.title}}</span><br><br>
+                <span id='exp_company'>{{ex.company}}<br>{{ex.year}}</span><br><br>
+                <span id='exp_descp'>{{ex.responsibilities}}</span>
+            </div>
+        </div>
+        </div>
+    </div>
+</div> 

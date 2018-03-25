@@ -1,0 +1,306 @@
+body, html{
+    font-family: 'Poiret One', cursive;
+    font-size: 12pt;
+    overflow-x: hidden;
+    background: linear-gradient(
+      rgba(0, 0, 0, 0.6),
+      rgba(0, 0, 0, 0.6)
+    ), 
+        url('bg.JPG');
+    
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    color: white;
+     -webkit-animation: opacity 1s normal ease-out;
+    animation: opacity 1s normal ease-out;
+}
+.heading{
+    text-align: center;
+    padding: 30px;
+    color: white;
+    position: relative;
+}
+.title{  
+    text-align: center;
+    font-size: 60pt;
+    color: white;
+    position: relative;
+    font-weight: bold;
+}
+.tagline{  
+    text-align: center;
+    font-size: 15pt;
+    color: white;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+}
+hr{
+   background: white;
+}
+#quote{
+    text-align: right;
+    position: relative;
+    padding: 30px;
+}
+#quote p{
+    padding: 60px;
+    font-weight: bold;
+    border-radius: 40px;
+    border-left-style: solid;
+    border-right-style: solid;
+}
+#quote_content{
+    text-align: center;
+    font-size: 20pt;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 100px;
+    background: linear-gradient(
+        rgba(0, 0, 0, 0.5),
+        rgba(230, 230, 230, 0.2),
+        rgba(230, 230, 230, 0.2),
+        rgba(0, 0, 0, 0.2)
+    );
+}
+#quote_author{
+    text-align: center;
+    font-size: 20pt;
+    margin-left: auto;
+    margin-right: auto;
+}
+#quote_content .fa{
+    position: absolute;
+    opacity: 0.5;
+    margin: -10px;
+}
+#about{
+    margin-left: auto;
+    margin-right: auto;
+    margin: 15px;
+    padding: 20px;
+    border-radius: 25px;
+    left: 20%;
+    border-left-style: solid;
+    border-right-style: solid;
+}
+#about_title{
+    text-align: center;
+    font-size: 35pt;
+    color: white;
+    padding: 10px;
+}
+#about_content{
+    height: auto;
+    width: auto;
+    text-indent: 50px;
+    text-align: justify;
+    color: white;
+    padding: 10px;
+    font-size: 15pt;
+}
+#project_title{
+    text-align: center;
+    font-size: 35pt;
+    color: white;
+    padding: 10px;
+    margin:auto;
+}
+#project_content{
+    text-align: center;
+    color: white;
+    padding: 10px;
+    font-size: 15pt;
+}
+.col-md-6{
+    border-right-style: solid;
+    border-left-style: solid;
+    padding: 10px;
+    text-align: center;
+    color: white;
+    border-radius:25px;
+}
+.projects img{
+    height: 300px;
+}
+.preface{
+    padding: 50px;
+}
+#project_name{
+    text-align: center;
+    font-size: 20pt;
+    color: white;
+    font-weight: bold;
+    opacity: 1;
+}
+#projects_descp{
+    text-align: center;
+    color: white;
+    font-size: 15pt;
+    opacity: 1;
+}
+#github{
+    text-align: center;
+    font-size: 20pt;
+    color: white;
+    font-weight: bold;
+    position: relative;
+    -webkit-animation: opacity 2s normal ease-in;
+    animation: opacity 2s normal ease-in;
+    padding: 30px;
+}
+.btn{
+    background-color: transparent;
+    border-radius: 50px;
+    color: white;
+    padding: 10px;
+    border: solid 2px white;
+    font-family: 'Poiret One', cursive;
+}
+#exp_title{
+    text-align: center;
+    font-size: 35pt;
+    color: white;
+    padding: 10px;
+    margin:auto;
+}
+#exp_content{
+    text-align: center;
+    color: white;
+    padding: 10px;
+    font-size: 15pt;
+}
+.col-md-6{
+    border-right-style: solid;
+    border-left-style: solid;
+    padding: 10px;
+    text-align: center;
+}
+.exp img{
+    height: 300px;
+}
+.exp{
+    padding: 50px;
+}
+#exp_name{
+    text-align: center;
+    font-size: 30pt;
+    color: white;
+    font-weight: bold;
+}
+#exp_company{
+    text-align: center;
+    color: white;
+    padding: 10px;
+    font-size: 15pt;
+    font-weight: bold;
+}
+#exp_descp{
+    text-align: center;
+    color: white;
+    font-size: 15pt;
+}
+.footer{
+    text-align: center;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    min-height: 10px;
+    letter-spacing: 10px;
+    padding: 10px;
+}
+.footer .fa{
+    color: white;
+}
+.footer-class{
+    text-align: right;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    -webkit-animation: opacity 2s normal ease-in;
+    animation: opacity 2s normal ease-in;
+    border-radius: 10px;
+    margin: 10px;
+    color: white;
+}
+.copyright{
+    -webkit-animation: opacity 2s normal ease-in;
+    animation: opacity 2s normal ease-in;
+    text-align: center;
+}
+.profile{
+    font-family: 'Poiret One', cursive;
+    font-size: 16pt;
+    font-weight: bold;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 10px;
+    margin-right: 10px;
+    text-align: center;
+}
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+    color: black;
+}
+input[type=submit] {
+    cursor: pointer;
+    background-color: transparent;
+    border-radius: 50px;
+    color: white;
+    padding: 10px;
+    border: solid 2px white;
+    font-family: 'Poiret One', cursive;
+}
+#submit_button{
+    text-align: center;
+    padding: 10px;
+}
+input[type=submit]:hover {
+    background-color: #E74C3C;
+    border: solid 2px #E74C3C;
+}
+.contact_container{
+    color: white;
+    opacity: 0.8;
+    border-radius: 25px;
+    left: 20%;
+    border-left-style: solid;
+    border-right-style: solid;
+}
+.contact {
+    opacity: 1;
+    border-radius: 5px;
+    width: auto;
+    height: auto;
+    margin: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+#contact_title{
+    text-align: center;
+    font-size: 16pt;
+    color: white;
+    font-weight: bolder;
+}
+@-webkit-keyframes opacity {
+    0% {        opacity: 0;    }
+    100% {        opacity: 1;    }
+}
+@keyframes opacity {
+    0% {        opacity: 0;    }
+    100% {        opacity: 1;    }
+}

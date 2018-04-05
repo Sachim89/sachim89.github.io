@@ -86,7 +86,7 @@ app.controller('IndepProCntrl',['$scope', function($scope) {
         $scope.indeproject.tagline = 'Technology is evolving, Requirements are changing. It is vital to learn new technologies and keep growing rather than sitting idle and lagging behind. “Utilize the time, create a chance, improve your knowledge”, this motto keeps me motivated and directs me towards the right successful career path. To be a part of this tremendously growing tech-era, I have created few projects out of my interest thereby honing my technology skills and building a diversified high technology skill set. ';
         $scope.project_1 = [
             {name: 'CUISINE PLATTER',
-            descrp: 'To be uploaded'}];
+            descrp: 'Designed and implemented Single Page Application (SPA) that serves as a CookBook using HTML5, CSS3, Twitter Bootstrap, JavaScript, AngularJS.'}];
 }]);
 
 app.controller('AboutCntrl',['$scope', function($scope) {

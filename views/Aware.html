@@ -1,0 +1,72 @@
+<!------ Experience ---->
+<div ng-controller='ExpCntrl'>
+<div class='aware_experience row'>
+    <div class='aware center col-md-6'>
+        <div class="heading" >
+            <span class='aware_exp_title'>{{aware.title}}</span>
+            <div class='aware_exp_content'>
+                <span>{{aware.tagline}}</span>
+            </div>
+        </div>
+    </div>
+</div>
+<!---- Summer Internship ---->
+<div class='aware'>
+    <div class='row'>
+        <div class="col-md-6">
+            <span class='aware_exp'>SUMMER INTERNSHIP</span>
+            <div class='aware_exp_details'>
+                {{aware.summary}}
+            </div>
+        </div>
+        <div class="col-md-6 aware_exp_table" ng-repeat='ex in aware_exp'>
+            <span id='aware_column'>ROLE </span><span id='aware_value'>{{ex.title}}</span><br>
+            <span id='aware_column'>COMPANY </span><span  id='aware_value'>{{ex.company}}</span><br>
+            <span id='aware_column'>DATE </span><span id='aware_value'>{{ex.year}}</span><br>
+            <span id='aware_column'>PROJECT </span><span id='aware_value'>{{ex.project}}</span>
+        </div>
+    </div>
+</div>
+<!---- Project Objectives ---->
+<div class='row aware_exp_table'>
+    <div class='row'>
+        <div class="col-md-6 aware_exp_table">
+            <span class='aware aware_exp'>PROJECT MILESTONES</span><br>
+             <br><img src='/css/JobOneA.jpg' class='aware_languages'>
+        </div>
+    <div class="col-md-6" ng-repeat='re in aware_resp'>
+        <span class='aware aware_exp'>PROJECT RESPONSIBILITIES</span>
+        <ul class='aware_res_mile_1'>
+            <li>{{re.re1}}</li><li>{{re.re2}}</li><li>{{re.re3}}</li>
+            <li>{{re.re4}}</li><li>{{re.re5}}</li>
+        </ul>
+    </div>
+</div>
+
+<!---- Project Schedule ---->
+<div class='container aware heading'>
+    <span class='aware_exp'>PROJECT TIMELINE AND PHASES</span><br>
+    <div class="aware_image_timeline">
+         <img src='/css/JobOneB.jpg'>
+    </div>
+</div>
+<!---- Lessons Learnt ---->
+<div class='aware'>
+    <div class='row'>
+        <div class="col-md-6">
+            <span class='aware_exp'>LESSONS LEARNED</span>
+            <div class='aware_exp_details'>
+                {{aware.learnt}}
+            </div>
+        </div>
+        <div class="col-md-6 aware_exp_table">
+            <img src='/css/JobOneC.jpg' class='aware_languages'>
+        </div>
+    </div>
+</div>
+     <div class="container">
+        <a href="#/Home" class='btn btn-primary prev'>Home</a>
+        <a href="#/Cognizant" class='btn btn-primary next'>Cognizant</a>
+    </div>
+</div>
+</div>

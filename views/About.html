@@ -1,12 +1,26 @@
-<!------ About ------>
-<hr>
-<div class='container'>
-    <div id='about' class='row' ng-controller='AboutCntrl'>
-        <div class='col-2'></div>
-        <div class='col-md-8'>
-            <span id="about_title">{{about.title}}</span>
-            <p id='about_content' class='col'>{{about.descrp}}           
-            </p>
+<!------ About ---->
+<div ng-controller='AboutCntrl'>
+     <div class='about_grids row center'>
+         <div class="container center heading">
+           <!--  <img src='/css/about.jpg' class='col-md-offset-1 col-md-3' style='padding:10px; background-color:grey; width:100%; height:auto; background-repeat:no-repeat; background-size:cover'> 
+             <br><div class='heading'></div>-->
+             <span class='about_title heading' style='color:white'>{{about.title}}</span><br>
+            <!-- <span class='about_exp_content' style='color:white'>MS Software Engineering</span><br>
+             <span class='about_exp_content' style='color:white'>MS Computer Science</span><br> -->
+         </div>
+    </div> 
+    <div class='container'><br></div>
+     <div class='about_experience about_heading row'>
+        <div class='heading col-md-6 center'>
+            <div class='about_exp_content'>
+                <span class='about_title'>{{about.title_1}}</span><br><br>
+                <span class='about_exp'>{{about.descrp}}</span><br><br>
+                <span class='about_exp'>{{about.descrp_1}}</span><br><br>
+                <span class='about_exp'>With a full-time job in this new-age cutting edge technology field, I would definitely be able to build on my acquired knowledge and walk on a path to achieve a long lasting full-filling career within such field. After appraising my <a href='/css/Saranya%20Manoharan.pdf' download data-tooltip='Click to download'>resume</a>, you will definitely see me as an individual with great personality, excellent work ethics and immense potential in an organization.</span><br><br>
+                <span class='about_exp'>You can reach out by email
+                    <a href="mailto:sachi.manoharan89@gmail.com">sachi.manoharan89@gmail.com</a> 
+                </span>
+            </div>
         </div>
     </div>
 </div>

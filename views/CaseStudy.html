@@ -1,0 +1,88 @@
+<!------ Case Study ---->
+<div ng-controller='ExpCntrl'>
+<div class='casestudy_experience row'>
+    <div class='casestudy center col-md-6'>
+        <div class="heading" >
+            <span class='casestudy_exp_title'>{{casestudy.title}}</span>
+            <div class='casestudy_exp_content'>
+                <span>{{casestudy.tagline}}</span>
+            </div>
+        </div>
+    </div>
+</div>
+<!---- Roles ---->
+<div class='casestudy'>
+    <div class='row'>
+        <div class="col-md-6">
+            <span class='casestudy_exp'>OVERVIEW</span>
+            <div class='casestudy_exp_details'>
+                {{casestudy.summary}}
+            </div>
+        </div>
+        <div class="col-md-6 casestudy_exp_table" ng-repeat='ex in casestudy_exp'>
+            <span id='casestudy_column'>ROLE </span><span id='casestudy_value'>{{ex.title}}</span><br>
+            <span id='casestudy_column'>TEAM </span><span  id='casestudy_value'>{{ex.team}}</span><br>
+            <span id='casestudy_column'>DATE </span><span id='casestudy_value'>{{ex.year}}</span><br>
+            <span id='casestudy_column'>COURSE </span><span id='casestudy_value'>{{ex.course}}</span>
+        </div>
+    </div>
+</div>
+<!---- Project Modules ---->
+<div class='container casestudy heading'>
+    <span class='casestudy_exp'>PROJECT MODULES</span><br><br>
+    <div class="casestudy_image_timeline">
+         <img src='/css/CaseStudyA.jpg'>
+    </div>
+</div>
+    
+<!---- Project Description ---->
+<div class='row casestudy_exp_table'>
+        <div class="col-md-6">
+            <span class='casestudy casestudy_exp'>LIBRARIES AND FUNCTIONS</span><br>
+            <br><br><img src='/css/CaseStudyB.jpg' class='casestudy_languages'>
+        </div>
+    <div class="col-md-6" ng-repeat='re in casestudy_resp'>
+        <span class='casestudy casestudy_exp'>PROJECT DESCRIPTION</span>
+         <ul class='casestudy_res_mile_1'>
+            <li>{{re.re1}}</li><li>{{re.re2}}</li><li>{{re.re3}}</li>
+            <li>{{re.re4}}</li><li>{{re.re5}}</li><li>{{re.re6}}</li><li>{{re.re7}}</li>
+            <li>{{re.re8}}</li><li>{{re.re9}}</li><li>{{re.re10}}</li>
+        </ul>
+    </div>
+</div>
+
+<!---- Snapshots ---->
+<div class='container'>
+    <div class="casestudy_exp_table">
+        <span class='casestudy casestudy_exp'>SAMPLE OUTPUTS</span>
+    </div>
+    <div class="container casestudy_exp_table">
+        <img src='/css/CaseStudyC.jpg' class='casestudy_languages'>
+    </div><br><br>
+    <div class="container casestudy_exp_table">
+        <img src='/css/CaseStudyD.jpg' class='casestudy_languages'>
+    </div>
+</div>
+      
+<!---- Lessons Learnt ---->
+<div class='casestudy'>
+    <div class='row'>
+         <div class="col-md-6">
+            <span class='casestudy_exp'>LESSONS LEARNT</span>
+            <div class='casestudy_exp_details'>
+                {{casestudy.learnt}}
+            </div>
+        </div>
+        <div class="col-md-6 center container casestudy_exp_table"><br>
+            <span class='casestudy_exp_details'>Want to check out my MovieLens project?<br>Click the button below.</span>
+            <a href='https://github.com/Sachim89/Data-Science'><br>
+            <button class='github btn btn-primary'>
+                <i class="fa fa-github fa-2x" aria-hidden="true"></i></button></a>
+        </div>
+    </div>
+</div>
+     <div class="container center">
+        <a href="#/Tcps" class='btn btn-primary prev'>Diploma</a>
+        <a href="#/ShuttleService" class='btn btn-primary next'>Shuttle Service</a>
+    </div>
+</div>

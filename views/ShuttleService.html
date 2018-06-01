@@ -1,0 +1,82 @@
+<!------ Shuttle Service ---->
+<div ng-controller='ExpCntrl'>
+<div class='shuttle_experience row'>
+    <div class='shuttle center col-md-6'>
+        <div class="heading" >
+            <span class='shuttle_exp_title'>{{shuttle.title}}</span>
+            <div class='shuttle_exp_content'>
+                <span>{{shuttle.tagline}}</span>
+            </div>
+        </div>
+    </div>
+</div>
+<!---- Roles ---->
+<div class='shuttle'>
+    <div class='row'>
+        <div class="col-md-6">
+            <span class='shuttle_exp'>SUMMARY</span>
+            <div class='shuttle_exp_details'>
+                {{shuttle.summary}}
+            </div>
+        </div>
+        <div class="col-md-6 shuttle_exp_table" ng-repeat='ex in shuttle_exp'>
+            <span id='shuttle_column'>ROLE </span><span id='shuttle_value'>{{ex.title}}</span><br>
+            <span id='shuttle_column'>TEAM </span><span  id='shuttle_value'>{{ex.team}}</span><br>
+            <span id='shuttle_column'>DATE </span><span id='shuttle_value'>{{ex.year}}</span><br>
+            <span id='shuttle_column'>COURSE </span><span id='shuttle_value'>{{ex.course}}</span>
+        </div>
+    </div>
+</div>
+
+<!---- Requirements ---->
+<div class='row  shuttle_exp_table'>
+        <div class="col-md-6">
+            <span class='shuttle shuttle_exp'>FUNCTIONAL REQUIREMENTS</span><br>
+            <img src='/css/ShuttleB.jpg' class='shuttle_languages'>
+        </div>
+    <div class="col-md-6" ng-repeat='re in shuttle_resp'>
+        <span class='shuttle shuttle_exp'>REQUIREMENTS DESCRIPTION</span>
+        <ul class='shuttle_res_mile_1'>
+            <li>{{re.re1}}</li><li>{{re.re2}}</li><li>{{re.re3}}</li>
+            <li>{{re.re4}}</li><li>{{re.re5}}</li><li>{{re.re6}}</li><li>{{re.re7}}</li>
+            <li>{{re.re8}}</li><li>{{re.re9}}</li><li>{{re.re10}}</li>
+        </ul>
+    </div>
+</div>
+
+<!---- Project Modules ---->
+<div class='container shuttle'>
+    <span class='shuttle_exp'>PROJECT MODULES</span>
+    <div class="shuttle_image_timeline">
+         <img src='/css/ShuttleA.jpg'>
+    </div>
+</div>
+ 
+    
+<!---- Lessons Learnt ---->
+<div class='shuttle row'>
+    <div class="col-md-6 shuttle_exp_table"><br>
+       <img src='/css/ShuttleC.jpg' class='shuttle_languages'>
+    </div>
+    <div class="col-md-6">
+        <span class='shuttle_exp'>LESSONS LEARNT</span>
+        <div class='shuttle_exp_details'>
+            {{shuttle.learnt}}
+        </div>
+    </div>
+</div>  
+<br><br>
+<!--- Github --->
+<div class='container shuttle_exp_table'>
+    <span class='shuttle_exp_details'>Want to check out Shuttle Service project?<br>Click the button below.</span>
+    <div class="shuttle_image_timeline">
+        <a href='https://github.com/Sachim89/GoatRunner'><br>
+            <button class='github btn btn-primary'>
+        <i class="fa fa-github fa-2x" aria-hidden="true"></i></button></a>
+    </div>
+</div>
+ <div class="container center">
+        <a href="#/CaseStudy" class='btn btn-primary prev'>Case Study</a>
+        <a href="#/PersonalProject" class='btn btn-primary next'>Cuisine</a>
+    </div>
+</div>

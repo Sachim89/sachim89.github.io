@@ -1,21 +1,65 @@
  <!---- Title ----->
-<div class="heading" ng-controller='HeaderCntrl'>
-    <hr><span class='title'>{{appDetails.title}}</span><hr>
-    <div class='row tagline'>
-        <div class='col-2'></div>
-        <div class='col-8'>
-             <span>{{appDetails.tagline_1}}</span><br>
-            <span>{{appDetails.tagline}}</span>
+<div class='container'>
+    <div class='row black'></div>
+    <div class='row' ng-controller='HeaderCntrl'>
+        <div class='center red col-md-7'>
+            <div class="heading">
+                <span class='title'>{{appDetails.title}}</span>
+                <div class='tagline'>
+                    <span>{{appDetails.tagline_1}}</span><br>
+                    <span>{{appDetails.tagline}}</span>
+                </div>
+            </div>
         </div>
     </div>
-</div>
-<!----- Quote ------>
-<div id='quote' class='row'>
-    <p id='quote_content' >
-        <i class="fa fa-quote-left fa-2x" aria-hidden="true"></i>
-        <span>
-        A dream doesn’t become reality through magic; it takes determination and hard work<br></span>
-        <span id='quote_author'>-Colin Powell</span>
-    </p>
-</div> 
+    <div class='row black'></div>
 
+<!--- Grid alignment -->
+<div class='container work center' ng-controller='ExpCntrl'>
+    <div class='row grid work_blocks'>
+        <div ng-repeat='ex in aware_exp'>
+            <a class='exp_content' ng-click=experience_function(ex.title)>
+                <div class='col-md-4 col-sm-4 img_aware img_cnt'>
+                    <span class='work_blocks_title'>AWARE INTERNSHIP</span> <br><br><br>
+                </div>
+            </a>
+        </div>
+        <div ng-repeat='ex in cognizant_exp'>
+            <a class='exp_content' ng-click=experience_function(ex.title)>
+                <div class='col-md-4 col-sm-4 img_cnt img_cognizant'>
+                    <span class='work_blocks_title'>COGNIZANT TECHNOLOGY SOLUTIONS</span> <br><br><br>
+                </div>
+            </a>
+        </div>
+        <div ng-repeat='ex in diploma_exp'>
+            <a class='exp_content' ng-click=experience_function(ex.title)>
+                <div class='col-md-4 col-sm-4 img_cnt img_adv_prg'>
+                    <span class='work_blocks_title'>ADVANCED PROGRAMMING CERTIFICATE</span> <br><br><br>
+                </div>
+            </a>
+        </div>
+    </div>
+    <div class='row grid_2 work_blocks_1'>
+         <div ng-repeat='ex in casestudy_exp'>
+            <a class='exp_content' ng-click=experience_function(ex.title)>
+                <div class='col-md-4 col-sm-4 img_cnt img_casestudy'>
+                    <span class='work_blocks_title'>MOVIELENS CASE STUDY</span> <br><br><br>
+                </div>
+            </a>
+        </div>
+        <div ng-repeat='ex in shuttle_exp'>
+            <a class='exp_content' ng-click=experience_function(ex.course_number)>
+                <div class='col-md-4 col-sm-4 img_cnt img_online'>
+                    <span class='work_blocks_title'>SHUTTLE SERVICE WEB APPLICATION</span> <br><br><br>
+                </div>
+            </a>
+        </div>
+        <div ng-repeat='ex in cuisine_exp'>
+            <a class='exp_content' ng-click=experience_function(ex.title)>
+                <div class='col-md-4 col-sm-4 img_cnt img_perpro'>
+                    <span class='work_blocks_title'>PERSONAL PROJECT</span> <br><br><br>
+                </div>
+            </a>
+        </div> 
+    </div>
+</div>

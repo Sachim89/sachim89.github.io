@@ -1,0 +1,67 @@
+<!------ Diploma ---->
+<div ng-controller='ExpCntrl'>
+<div class='diploma_experience row'>
+    <div class='diploma center col-md-9'>
+        <div class="heading" >
+            <span class='diploma_exp_title'>{{diploma.title}}</span>
+            <div class='diploma_exp_content'>
+                <span>{{diploma.tagline}}</span>
+            </div>
+        </div>
+    </div>
+</div>
+<!---- Roles ---->
+<div class='diploma'>
+    <div class='row'>
+        <div class="col-md-6">
+            <span class='diploma_exp'>SUMMARY</span>
+            <div class='diploma_exp_details'>
+                {{diploma.summary}}
+            </div>
+        </div>
+        <div class="col-md-6 diploma_exp_table" ng-repeat='ex in diploma_exp'>
+            <span id='diploma_column'>CERTIFICATE </span><span  id='diploma_value'>{{ex.certificate}}</span><br>
+            <span id='diploma_column'>DATE </span><span id='diploma_value'>{{ex.year}}</span><br>
+            <span id='diploma_column'>INSTITUTE </span><span id='diploma_value'>{{ex.institute}}</span>
+        </div>
+    </div>
+</div>
+<!---- Coursework Overview ---->
+<div class='diploma'>
+    <span class='diploma_exp'>OUTLINE OF DACP COURSEWORK</span><br><br><br><br>
+    <div class="col-md-6">
+        <img src='/css/DiplomaA.jpg' class='diploma_languages'>
+    </div>
+    <div class="col-md-6">
+        <img src='/css/DiplomaB.jpg' class='diploma_languages'><br><br><br>
+    </div>
+    <div class="col-md-6 diploma_exp_table"  ng-repeat='re in diploma_resp'>
+        <span class='diploma diploma_exp'>C PROGRAMMING</span>
+        <ul class='diploma_res_mile_1'>
+            <li>{{re.re1}}</li><li>{{re.re2}}</li><li>{{re.re3}}</li><li>{{re.re4}}</li>
+            <li>{{re.re5}}</li><li>{{re.re6}}</li><li>{{re.re7}}</li><li>{{re.re8}}</li>
+        </ul>
+    </div>
+    <div class="col-md-6 diploma_exp_table"  ng-repeat='re in diploma_resp'>
+        <span class='diploma diploma_exp'>C++ & JAVA PROGRAMMING</span>
+        <ul class='diploma_res_mile_1'>
+            <li>{{re.re9}}</li><li>{{re.re10}}</li><li>{{re.re11}}</li>
+            <li>{{re.re12}}</li><li>{{re.re13}}</li>
+            <li>{{re.re14}}</li><li>{{re.re15}}</li>
+        </ul>
+    </div>
+</div>
+
+<div class='container'></div> 
+<!---- DACP Certificate 
+<div class='container diploma heading'>
+    <span class='diploma_exp'>DIPLOMA IN ADVANCED PROGRAMMING CERTIFICATE</span><br><br>
+    <div class="diploma_image_timeline">
+         <img src='/css/CaseStudyA.jpg'>
+    </div>
+</div>---->
+     <div class="container center">
+        <a href="#/Cognizant" class='btn btn-primary prev'>Cognizant</a>
+        <a href="#/CaseStudy" class='btn btn-primary next'>Case Study</a>
+    </div>
+</div>

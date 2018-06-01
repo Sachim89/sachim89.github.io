@@ -1,207 +1,888 @@
 body, html{
-    font-family: 'Poiret One', cursive;
+    font-family: 'Crimson Text', serif;
     font-size: 12pt;
+    background: white;  
+    color: black;
+     -webkit-animation: opacity 1s normal ease-out;
+    animation: opacity 1s normal ease-out;
     overflow-x: hidden;
-    background: linear-gradient(
-      rgba(0, 0, 0, 0.6),
-      rgba(0, 0, 0, 0.6)
-    ), 
-        url('bg.JPG');
-    
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
-    color: white;
-     -webkit-animation: opacity 1s normal ease-out;
-    animation: opacity 1s normal ease-out;
+}
+.navbar ul {
+    margin-left: auto;
+    margin-right: auto;
+}
+.navbar li a{
+    color: black;
+    text-align: center;
+    display: block;
+    letter-spacing: 1px;
+    margin-left: 10px;
+}
+.navbar-collapse{
+    position: relative;
+    color: black;
+}
+.center{
+    margin: auto;
+    padding: 40px;
 }
 .heading{
     text-align: center;
-    padding: 30px;
+    padding: 35px;
     color: white;
     position: relative;
+    font-family: 'Poiret One', cursive;
 }
 .title{  
     text-align: center;
-    font-size: 60pt;
-    color: white;
+    font-size: 40pt;
+    color: black;
     position: relative;
     font-weight: bold;
+    line-height: 40px;
 }
 .tagline{  
     text-align: center;
     font-size: 15pt;
-    color: white;
+    color: black;
     position: relative;
     margin-left: auto;
     margin-right: auto;
+    font-family: 'Crimson Text', serif;
+    margin: 20px;
+    line-height: 40px;
 }
 hr{
-   background: white;
+   background: black;
 }
-#quote{
-    text-align: right;
-    position: relative;
-    padding: 30px;
+.red{
+    padding: 55px;
 }
-#quote p{
-    padding: 60px;
-    font-weight: bold;
-    border-radius: 40px;
-    border-left-style: solid;
-    border-right-style: solid;
+.black{
+    background-color:black; 
+    height:auto;
+    padding: 4px;
 }
-#quote_content{
+/********************************************************************************/
+
+/** GRID ONE ***/
+.grid{
     text-align: center;
-    font-size: 20pt;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 100px;
-    background: linear-gradient(
-        rgba(0, 0, 0, 0.5),
-        rgba(230, 230, 230, 0.2),
-        rgba(230, 230, 230, 0.2),
-        rgba(0, 0, 0, 0.2)
-    );
+    margin-top: 40px;
+    margin-left: 0px;
+    margin-right: 0px;
 }
-#quote_author{
+.work{
+    padding: 0px;
+}
+.work_blocks .col-md-4{
+    margin-top: 10%;
+    max-height: 100%;
+    max-width: 100%;
+    border: 2px solid #848484;
+}
+.work_blocks_title{
+    color: black;
+    font-size: 15pt;
     text-align: center;
-    font-size: 20pt;
-    margin-left: auto;
-    margin-right: auto;
-}
-#quote_content .fa{
-    position: absolute;
-    opacity: 0.5;
-    margin: -10px;
-}
-#about{
-    margin-left: auto;
-    margin-right: auto;
-    margin: 15px;
     padding: 20px;
-    border-radius: 25px;
-    left: 20%;
-    border-left-style: solid;
-    border-right-style: solid;
+    font-family: 'Gugi', cursive;
 }
-#about_title{
+/** GRID ONE - BLOCK 1 **/
+.work_blocks .img_aware{
+    background:url('/css/GridOne.jpg') no-repeat;
+    width: 350px;
+    height: 350px;
     text-align: center;
-    font-size: 35pt;
-    color: white;
+    background-position: center;
+    background-size: contain;
+    position: relative;
+    margin-left: 10px;
     padding: 10px;
 }
-#about_content{
-    height: auto;
-    width: auto;
-    text-indent: 50px;
-    text-align: justify;
-    color: white;
-    padding: 10px;
-    font-size: 15pt;
+.work_blocks  .img_aware:hover{
+    cursor: pointer;
+    box-shadow: 0 0 2px 2px #848484;
 }
-#project_title{
+/** GRID ONE - BLOCK 2 **/
+.work_blocks .img_cognizant{
+    background:url('/css/GridTwo.jpg') no-repeat;
+    width: 350px;
+    height: 350px;
     text-align: center;
-    font-size: 35pt;
-    color: white;
+    background-position: center;
+    background-size: contain;
+    position: relative;
+    margin-left: 10px;
     padding: 10px;
-    margin:auto;
 }
-#project_content{
+.work_blocks .img_cognizant:hover{
+    cursor: pointer;
+    box-shadow: 0 0 2px 2px #848484;
+}
+/** GRID ONE - BLOCK 3 **/
+.work_blocks .img_adv_prg{
+    background:url('/css/GridThree.jpg') no-repeat;
+    width: 350px;
+    height: 350px;
     text-align: center;
-    color: white;
+    background-position: center;
+    background-size: contain;
+    position: relative;
+    margin-left: 10px;
     padding: 10px;
-    font-size: 15pt;
 }
-.col-md-6{
-    border-right-style: solid;
-    border-left-style: solid;
-    padding: 10px;
+.work_blocks .img_adv_prg:hover{
+    cursor: pointer;
+    box-shadow: 0 0 2px 2px #848484;
+}
+/** GRID TWO **/
+.grid_2{
     text-align: center;
-    color: white;
-    border-radius:25px;
+    margin-left: 0px;
+    margin-right: 0px;
 }
-.projects img{
-    height: 300px;
+.work_blocks_1 .col-md-4{
+    max-height: 100%;
+    max-width: 100%;
+    border: 2px solid #848484;
 }
-.preface{
+/** GRID TWO - BLOCK 1 **/
+.work_blocks_1 .img_casestudy{
+    background:url('/css/GridFour.jpg') no-repeat;
+    width: 350px;
+    height: 350px;
+    text-align: center;
+    background-position: center;
+    background-size: contain;
+    position: relative;
+    margin-top: 10px;
+    margin-left: 10px;
+    padding: 10px;
+}
+.work_blocks_1  .img_casestudy:hover{
+    cursor: pointer;
+    box-shadow: 0 0 2px 2px #848484;
+}
+/** GRID TWO - BLOCK 2 **/
+.work_blocks_1 .img_perpro{
+    background:url('/css/GridFive.jpg') no-repeat;
+    width: 350px;
+    height: 350px;
+    text-align: center;
+    background-position: center;
+    background-size: contain;
+    position: relative;
+    margin-top: 10px;
+    margin-left: 10px;
+    padding: 10px;
+}
+.work_blocks_1 .img_perpro:hover{
+    cursor: pointer;
+    box-shadow: 0 0 2px 2px #848484;
+}
+/** GRID TWO - BLOCK 3 **/
+.work_blocks_1 .img_online{
+    background:url('/css/GridSix.jpg') no-repeat;
+    width: 350px;
+    height: 350px;
+    text-align: center;
+    background-position: center;
+    background-size: contain;
+    position: relative;
+    margin-top: 10px;
+    margin-left: 10px;
+    padding: 10px;
+}
+.work_blocks_1 .img_online:hover{
+    cursor: pointer;
+    box-shadow: 0 0 2px 2px #848484;
+}
+/********************************************************************************/
+
+/** AWARE PAGE CONTENTS **/
+.aware_experience{
+    background: linear-gradient(
+       #084B8A,#045FB4,#0431B4,#045FB4  );
     padding: 50px;
 }
-#project_name{
-    text-align: center;
-    font-size: 20pt;
-    color: white;
-    font-weight: bold;
-    opacity: 1;
-}
-#projects_descp{
+.aware_exp_title{
     text-align: center;
     color: white;
-    font-size: 15pt;
-    opacity: 1;
-}
-#github{
-    text-align: center;
-    font-size: 20pt;
-    color: white;
-    font-weight: bold;
+    font-family: 'Poiret One', cursive;
+    font-size: 40pt;
     position: relative;
-    -webkit-animation: opacity 2s normal ease-in;
-    animation: opacity 2s normal ease-in;
+    font-weight: bold;
+}
+.aware_exp_content{
+    text-align: center;
+    font-size: 20pt;
+    margin-top: auto;
+    margin-bottom: auto;
+    font-family: 'Crimson Text', serif;
+    color: white;
+}
+.aware{
+    padding: 40px;
+    text-align: center;
+    margin-top: 5%;
+}
+.aware_exp{
+    color: black;
+    font-family: 'Poiret One', cursive;
+    font-size: 25pt;
+    position: relative;
+    padding: 5px;
+    font-weight: bold;
+}
+.aware_exp_details{
+    font-size: 14pt;
+    text-align: left;
+    margin-top: 10px;
+    padding: 25px;
+    text-align: justify;
+    text-indent: 30px;
+}
+.aware_exp_table{
+    font-size: 14pt;
+    margin-top: auto;
+    margin-bottom: auto;
+    position: relative;
+    padding: 20px;
+    text-align: center;
+}
+#aware_column{
+    color: black;
+    font-weight: bold;
+    float: left;
+    position: relative;
+}
+#aware_value{
+    color: black;
+    float: right;
+    position: relative;
+}
+.aware_res_mile_1{
+    text-align: left;
+    list-style: circle;
+    margin-top: 10px;
+    padding: 25px;
+}
+.aware_image_timeline img{
+    width: 100%;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+.aware_languages{
+    width: 100%;
+    height: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+    position: relative;
+}
+/********************************************************************************/
+
+/** COGNIZANT PAGE CONTENTS **/
+.cognizant_experience{
+    background: linear-gradient(
+      #01A9DB,#00BFFF,#71CDF4,#71CDF4, #01A9DB
+        );
+    padding: 50px;
+}
+.cognizant_exp_title{
+    text-align: center;
+    color: white;
+    font-family: 'Poiret One', cursive;
+    font-size: 40pt;
+    position: relative;
+    font-weight: bold;
+}
+.cognizant_exp_content{
+    text-align: center;
+    font-size: 20pt;
+    margin-top: auto;
+    margin-bottom: auto;
+    font-family: 'Crimson Text', serif;
+    color: white;
+}
+.cognizant{
+    padding: 40px;
+    text-align: center;
+    margin-top: 5%;
+}
+.cognizant_exp{
+    color: black;
+    font-family: 'Poiret One', cursive;
+    font-size: 25pt;
+    position: relative;
+    padding: 5px;
+    font-weight: bold;
+}
+.cognizant_exp_details{
+    font-size: 14pt;
+    text-align: left;
+    margin-top: 10px;
+    padding: 25px;
+    text-align: justify;
+    text-indent: 30px;
+}
+.cognizant_exp_table{
+    font-size: 14pt;
+    margin-top: auto;
+    margin-bottom: auto;
+    position: relative;
+    padding: 20px;
+    text-align: center;
+}
+#cognizant_column{
+    color: black;
+    font-weight: bold;
+    float: left;
+    position: relative;
+}
+#cognizant_value{
+    color: black;
+    float: right;
+    position: relative;
+}
+.cognizant_res_mile_1{
+    text-align: left;
+    list-style: circle;
+    margin-top: 10px;
+    padding: 25px;
+}
+.cognizant_languages{
+    width: 100%;
+    height: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+    position: relative;
+}
+/********************************************************************************/
+
+/** ADVANCED PROGRAMMING PAGE CONTENTS **/
+.diploma_experience{
+    background: linear-gradient(
+      #B45F04,#B45F04,#DF7401,#FF8000,#FF8000,#B45F04  );
+    padding: 50px;
+}
+.diploma_exp_title{
+    text-align: center;
+    color: white;
+    font-family: 'Poiret One', cursive;
+    font-size: 40pt;
+    position: relative;
+    font-weight: bold;
+}
+.diploma_exp_content{
+    text-align: center;
+    font-size: 20pt;
+    margin-top: auto;
+    margin-bottom: auto;
+    font-family: 'Crimson Text', serif;
+    color: white;
+}
+.diploma{
+    padding: 30px;
+    text-align: center;
+    margin-top: 5%;
+}
+.diploma_exp{
+    color: black;
+    font-family: 'Poiret One', cursive;
+    font-size: 25pt;
+    position: relative;
+    padding: 5px;
+    font-weight: bold;
+}
+.diploma_exp_heading{
+    color: black;
+    position: relative;
+    text-align: center;
+}
+.diploma_exp_details{
+    font-size: 14pt;
+    text-align: left;
+    margin-top: 10px;
+    padding: 25px;
+    text-align: justify;
+    text-indent: 30px;
+}
+.diploma_exp_table{
+    font-size: 14pt;
+    margin-top: auto;
+    margin-bottom: auto;
+    position: relative;
+    padding: 20px;
+    text-align: center;
+}
+#diploma_column{
+    color: black;
+    font-weight: bold;
+    float: left;
+    position: relative;
+}
+#diploma_value{
+    color: black;
+    float: right;
+    position: relative;
+}
+.diploma_image_timeline img{
+    width: 100%;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+.diploma_languages{
+    width: 100%;
+    height: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+    position: relative;
+}
+.diploma_res_mile_1{
+    text-align: left;
+    list-style: circle;
+    margin-top: 10px;
+    padding: 25px;
+}
+/********************************************************************************/
+
+/** CASE STUDY PAGE CONTENTS **/
+.casestudy_experience{
+    background: linear-gradient(
+      #B4045F,#DF0174, #FF0080,#FF0080, #B4045F  );
+    padding: 50px;
+}
+.casestudy_exp_title{
+    text-align: center;
+    color: white;
+    font-family: 'Poiret One', cursive;
+    font-size: 40pt;
+    position: relative;
+    font-weight: bold;
+}
+.casestudy_exp_content{
+    text-align: center;
+    font-size: 20pt;
+    margin-top: auto;
+    margin-bottom: auto;
+    font-family: 'Crimson Text', serif;
+    color: white;
+}
+.casestudy{
+    padding: 30px;
+    text-align: center;
+    margin-top: 5%;
+}
+.casestudy_exp{
+    color: black;
+    font-family: 'Poiret One', cursive;
+    font-size: 25pt;
+    position: relative;
+    padding: 5px;
+    font-weight: bold;
+}
+.casestudy_exp_details{
+    font-size: 14pt;
+    text-align: left;
+    margin-top: 10px;
+    padding: 25px;
+    text-align: justify;
+    text-indent: 30px;
+}
+.casestudy_exp_table{
+    font-size: 14pt;
+    margin-top: auto;
+    margin-bottom: auto;
+    position: relative;
+    padding: 20px;
+    text-align: center;
+}
+#casestudy_column{
+    color: black;
+    font-weight: bold;
+    float: left;
+    position: relative;
+}
+#casestudy_value{
+    color: black;
+    float: right;
+    position: relative;
+}
+.casestudy_res_mile_1{
+    text-align: left;
+    list-style: circle;
+    margin-top: 10px;
+    padding: 25px;
+}
+.casestudy_image_timeline img{
+    width: 100%;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+.casestudy_languages{
+    width: 100%;
+    height: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+    position: relative;
+}
+/********************************************************************************/
+
+/** GOAT RUNNER PAGE CONTENTS **/
+.shuttle_experience{
+    background: linear-gradient(
+     #610B0B,#8A0808, #DF3A01,#DF3A01,#8A0808, #610B0B);
+    padding: 50px;
+}
+.shuttle_exp_title{
+    text-align: center;
+    color: white;
+    font-family: 'Poiret One', cursive;
+    font-size: 40pt;
+    position: relative;
+    font-weight: bold;
+}
+.shuttle_exp_content{
+    text-align: center;
+    font-size: 20pt;
+    margin-top: auto;
+    margin-bottom: auto;
+    font-family: 'Crimson Text', serif;
+    color: white;
+}
+.shuttle{
+    padding: 30px;
+    text-align: center;
+    margin-top: 5%;
+}
+.shuttle_exp{
+    color: black;
+    font-family: 'Poiret One', cursive;
+    font-size: 25pt;
+    position: relative;
+    padding: 5px;
+    font-weight: bold;
+}
+.shuttle_exp_details{
+    font-size: 14pt;
+    text-align: left;
+    margin-top: 10px;
+    padding: 25px;
+    text-align: justify;
+    text-indent: 30px;
+}
+.shuttle_exp_table{
+    font-size: 14pt;
+    margin-top: auto;
+    margin-bottom: auto;
+    position: relative;
+    padding: 20px;
+    text-align: center;
+}
+#shuttle_column{
+    color: black;
+    font-weight: bold;
+    float: left;
+    position: relative;
+}
+#shuttle_value{
+    color: black;
+    float: right;
+    position: relative;
+}
+.shuttle_res_mile_1{
+    text-align: left;
+    list-style: circle;
+    margin-top: 5px;
+    padding: 25px;
+}
+.shuttle_image_timeline img{
+    width: 100%;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+.shuttle_languages{
+    width: 100%;
+    height: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+    position: relative;
+}
+/********************************************************************************/
+
+/** CUISINE PLATTER PAGE CONTENTS **/
+.cuisine_experience{
+    background: linear-gradient(
+     #0B6121,#088A08, #04B404,#04B404,#088A08, #0B6121);
+    padding: 50px;
+}
+.cuisine_exp_title{
+    text-align: center;
+    color: white;
+    font-family: 'Poiret One', cursive;
+    font-size: 40pt;
+    position: relative;
+    font-weight: bold;
+}
+.cuisine_exp_content{
+    text-align: center;
+    font-size: 20pt;
+    margin-top: auto;
+    margin-bottom: auto;
+    font-family: 'Crimson Text', serif;
+    color: white;
+}
+.cuisine{
+    padding: 30px;
+    text-align: center;
+    margin-top: 5%;
+}
+.cuisine_exp{
+    color: black;
+    font-family: 'Poiret One', cursive;
+    font-size: 25pt;
+    position: relative;
+    padding: 5px;
+    font-weight: bold;
+}
+.cuisine_exp_details{
+    font-size: 14pt;
+    text-align: left;
+    margin-top: 10px;
+    padding: 25px;
+    text-align: justify;
+    text-indent: 30px;
+}
+.cuisine_exp_table{
+    font-size: 14pt;
+    margin-top: auto;
+    margin-bottom: auto;
+    position: relative;
+    padding: 20px;
+    text-align: center;
+}
+#cuisine_column{
+    color: black;
+    font-weight: bold;
+    float: left;
+    position: relative;
+}
+#cuisine_value{
+    color: black;
+    float: right;
+    position: relative;
+}
+.cuisine_res_mile_1{
+    text-align: left;
+    list-style: circle;
+    margin-top: 5px;
+    padding: 25px;
+}
+.cuisine_image_timeline img{
+    width: 100%;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+.cuisine_languages{
+    width: 100%;
+    height: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+    position: relative;
+}
+/********************************************************************************/
+
+/** PROJECTS **/
+.project_experience{
+    background: linear-gradient(
+        rgba(0, 0, 0, 0.3),rgba(0, 0, 0, 0.6),
+        rgba(0, 0, 0, 1),rgba(0, 0, 0, 0.3)        
+    );
     padding: 30px;
 }
-.btn{
-    background-color: transparent;
-    border-radius: 50px;
+.project_heading{
+    text-align: center;
+    padding: 40px;
+}
+.project{
+    padding: 40px;
+    margin-top: 5%;
+}
+.project_exp_title{
+    text-align: center;
     color: white;
+    font-family: 'Poiret One', cursive;
+    font-size: 40pt;
+    position: relative;
+    font-weight: bold;
+    margin-top: 5%;
     padding: 10px;
-    border: solid 2px white;
+}
+.project_exp_content{
+    text-align: center;
+    font-size: 20pt;
+    margin-top: auto;
+    margin-bottom: auto;
+    font-family: 'Crimson Text', serif;
+    color: white;
+}
+.project_exp_details{
+    font-size: 14pt;
+    text-align: left;
+    margin-top: 10px;
+    padding: 25px;
+    text-align: justify;
+    text-indent: 30px;
+}
+.project_exp_table{
+    font-size: 12pt;
+    margin-top: auto;
+    margin-bottom: auto;
+    position: relative;
+    padding: 20px;
+}
+.project_exp{
+    color: black;
+    font-family: 'Gugi', cursive;
+    font-size: 15pt;
+    position: relative;
+    font-weight: bolder;
+}
+.project_languages{
+    width: 100%;
+    height: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+    position: relative;
+}
+.project_image_timeline img{
+    width: 100%;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+.projects_descp{
+    text-align: left;
+    color: black;
+    font-size: 14pt;
+}
+.content_align{
+    line-height: 35px;
+    padding: 30px;
+    margin-top: 5%;
+    border: 2px solid black;
+    border-radius: 5px;
+}
+.code{
+    background-color: transparent;
+    border-radius: 10px;
+    color: #BDBDBD;
+    padding: 20px;
+    border: solid 1px #BDBDBD;
+    margin: 20px;
+    font-family: 'Gugi', cursive;
+    font-weight: lighter;
+    font-size: 12pt;
+    float: right;
+}
+.github{
+    background-color: transparent;
+    border-radius: 10px;
+    color: #BDBDBD;
+    padding: 10px;
+    border: solid 1px #BDBDBD;
+    font-family: 'Gugi', cursive;
+    font-weight: lighter;
+    font-size: 12pt;
+}
+.prev{
+    background-color: transparent;
+    color: #585858;
+    font-family: 'Gugi', cursive;
+    font-weight: lighter;
+    font-size: 12pt;
+    border: none;
+    float: left;
+}
+.next{
+    background-color: transparent;
+    color: #585858;
+    font-family: 'Gugi', cursive;
+    font-weight: lighter;
+    font-size: 12pt;
+    border: none;
+    float: right;
+}
+.prev::before{
+    content: '< ';
+}
+.next::after{
+    content: ' >';
+}
+.prev:hover, .next:hover{
+    background-color: #585858;
+    border-radius: 10px;
+}
+/** ABOUT **/
+.about_title{  
+    text-align: center;
+    font-size: 40pt;
+    color: black;
+    position: relative;
+    font-weight: bold;
+}
+.about_heading{
+    text-align: center;
+    color: white;
+    position: relative;
     font-family: 'Poiret One', cursive;
 }
-#exp_title{
-    text-align: center;
-    font-size: 35pt;
-    color: white;
-    padding: 10px;
-    margin:auto;
+.about_experience img{
+    width: 100%;
+    float: right;
 }
-#exp_content{
+.about_exp_title{
     text-align: center;
-    color: white;
+    color: black;
+    font-family: 'Poiret One', cursive;
+    font-size: 40pt;
+    position: relative;
+    font-weight: bolder;
+    margin-top: 5%;
     padding: 10px;
+}
+.about_exp_content{
+    text-align: left;
     font-size: 15pt;
+    margin-top: auto;
+    margin-bottom: auto;
+    font-family: 'Crimson Text', serif;
+    color: black;
 }
-.col-md-6{
-    border-right-style: solid;
-    border-left-style: solid;
-    padding: 10px;
-    text-align: center;
-}
-.exp img{
-    height: 300px;
-}
-.exp{
-    padding: 50px;
-}
-#exp_name{
-    text-align: center;
-    font-size: 30pt;
-    color: white;
-    font-weight: bold;
-}
-#exp_company{
-    text-align: center;
-    color: white;
-    padding: 10px;
+.about_exp{
     font-size: 15pt;
-    font-weight: bold;
+    line-height: 40px;
 }
-#exp_descp{
-    text-align: center;
-    color: white;
-    font-size: 15pt;
+.about_grids{
+    background: url('a.jpg');
+    word-wrap: break-word;
+}
+/** FOOTER **/
+.footer-class{
+    text-align: right;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    border-radius: 10px;
+    margin: 10px;
+    color: black;
 }
 .footer{
     text-align: center;
@@ -212,89 +893,18 @@ hr{
     position: relative;
     min-height: 10px;
     letter-spacing: 10px;
-    padding: 10px;
 }
 .footer .fa{
-    color: white;
-}
-.footer-class{
-    text-align: right;
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
-    -webkit-animation: opacity 2s normal ease-in;
-    animation: opacity 2s normal ease-in;
-    border-radius: 10px;
-    margin: 10px;
-    color: white;
+    color: #424242;
 }
 .copyright{
-    -webkit-animation: opacity 2s normal ease-in;
-    animation: opacity 2s normal ease-in;
     text-align: center;
 }
-.profile{
-    font-family: 'Poiret One', cursive;
-    font-size: 16pt;
-    font-weight: bold;
-    margin-top: auto;
-    margin-bottom: auto;
-    margin-left: 10px;
-    margin-right: 10px;
-    text-align: center;
+.fa-github:hover{
+    color: #6e5494;
 }
-input[type=text], select, textarea {
-    width: 100%;
-    padding: 12px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
-    margin-top: 6px;
-    margin-bottom: 16px;
-    resize: vertical;
-    color: black;
-}
-input[type=submit] {
-    cursor: pointer;
-    background-color: transparent;
-    border-radius: 50px;
-    color: white;
-    padding: 10px;
-    border: solid 2px white;
-    font-family: 'Poiret One', cursive;
-}
-#submit_button{
-    text-align: center;
-    padding: 10px;
-}
-input[type=submit]:hover {
-    background-color: #E74C3C;
-    border: solid 2px #E74C3C;
-}
-.contact_container{
-    color: white;
-    opacity: 0.8;
-    border-radius: 25px;
-    left: 20%;
-    border-left-style: solid;
-    border-right-style: solid;
-}
-.contact {
-    opacity: 1;
-    border-radius: 5px;
-    width: auto;
-    height: auto;
-    margin: 10px;
-    margin-left: auto;
-    margin-right: auto;
-}
-#contact_title{
-    text-align: center;
-    font-size: 16pt;
-    color: white;
-    font-weight: bolder;
+.fa-linkedin-square:hover{
+    color: #0073a4;
 }
 @-webkit-keyframes opacity {
     0% {        opacity: 0;    }

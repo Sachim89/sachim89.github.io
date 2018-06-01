@@ -1,0 +1,65 @@
+<!------ Personal Project ---->
+<div ng-controller='ExpCntrl'>
+<div class='cuisine_experience row'>
+    <div class='cuisine center col-md-6'>
+        <div class="heading" >
+            <span class='cuisine_exp_title'>{{cuisine.title}}</span>
+            <div class='cuisine_exp_content'>
+                <i><span>"{{cuisine.tagline_1}}"</span></i>
+                <span>{{cuisine.tagline}}</span>
+            </div>
+        </div>
+    </div>
+</div>
+<!---- Roles ---->
+<div class='cuisine'>
+    <div class='row'>
+        <div class="col-md-6">
+            <span class='cuisine_exp'>ABSTRACT</span>
+            <div class='cuisine_exp_details'>
+                {{cuisine.summary}}
+            </div>
+        </div>
+        <div class="col-md-6 cuisine_exp_table" ng-repeat='ex in cuisine_exp'>
+            <span id='cuisine_column'>ROLE </span><span id='cuisine_value'>{{ex.title}}</span><br>
+            <span id='cuisine_column'>DATE </span><span id='cuisine_value'>{{ex.year}}</span><br>
+        </div>
+    </div>
+</div>
+
+<!---- Project  ---->
+<div class='container cuisine'>
+    <span class='cuisine_exp'>MODULES & PROCESS FLOW</span>
+    <div class="cuisine_image_timeline">
+         <br><img src='/css/CuisineA.jpg'>
+    </div>
+</div>
+    
+<!---- Project Description ---->
+<div class='center row'>
+     <div class="col-md-5 cuisine_exp_table"><br>
+           <img src='/css/CuisineB.jpg' class='cuisine_languages'>
+        </div>
+    <div class="col-md-7 container cuisine_exp_table"  ng-repeat='re in cuisine_resp'>
+        <span class='cuisine cuisine_exp'>PROJECT DESCRIPTION</span>
+        <ul class='cuisine_res_mile_1'>
+            <li>{{re.re1}}</li><li>{{re.re2}}</li><li>{{re.re3}}</li>
+            <li>{{re.re4}}</li><li>{{re.re5}}</li>
+        </ul>
+    </div>
+</div>
+    
+<!---- Snapshots ---->
+<div class='row'>
+    <div class="col-md-12 cuisine_exp_table">
+        <span class='cuisine cuisine_exp'>SAMPLE OUTPUTS</span>
+    </div>
+    <div class="col-md-12 cuisine_exp_table">
+        <img src='/css/CuisineC.jpg' class='cuisine_languages'>
+    </div>
+</div>
+     <div class="container center">
+        <a href="#/ShuttleService" class='btn btn-primary prev'>Shuttle Service</a>
+        <a href="#/Projects" class='btn btn-primary next'>Projects</a>
+    </div>
+</div>

@@ -1,0 +1,50 @@
+<!------ Experience ---->
+<div ng-controller='ExpCntrl'>
+<div class='cognizant_experience row'>
+    <div class='cognizant center col-md-6'>
+        <div class="heading" >
+            <span class='cognizant_exp_title'>{{cognizant.title}}</span>
+            <div class='cognizant_exp_content'>
+                <span>{{cognizant.tagline}}</span>
+            </div>
+        </div>
+    </div>
+</div>
+<!---- Roles ---->
+<div class='cognizant'>
+    <div class='row'>
+        <div class="col-md-6">
+            <span class='cognizant_exp'>.NET DEVELOPER</span>
+            <div class='cognizant_exp_details'>
+                {{cognizant.summary}}
+            </div>
+        </div>
+        <div class="col-md-6 cognizant_exp_table" ng-repeat='ex in cognizant_exp'>
+            <span id='cognizant_column'>ROLE </span><span id='cognizant_value'>{{ex.title}}</span><br>
+            <span id='cognizant_column'>COMPANY </span><span  id='cognizant_value'>{{ex.company}}</span><br>
+            <span id='cognizant_column'>DATE </span><span id='cognizant_value'>{{ex.year}}</span><br>
+            <span id='cognizant_column'>TEAM </span><span id='cognizant_value'>{{ex.team}}</span>
+        </div>
+    </div>
+</div>
+<!---- Project ---->
+<div class='row cognizant_exp_table'>
+    <div class='row'>
+        <div class="col-md-6 cognizant_exp_table">
+            <span class='cognizant cognizant_exp'>PROJECT MILESTONES</span>
+            <br><br><img src='/css/JobTwoA.jpg' class='cognizant_languages'>
+        </div>
+    <div class="col-md-6" ng-repeat='re in cognizant_resp'>
+        <span class='cognizant cognizant_exp'>PROJECT RESPONSIBILITIES</span>
+         <ul class='cognizant_res_mile_1'>
+            <li>{{re.re1}}</li><li>{{re.re2}}</li><li>{{re.re3}}</li>
+            <li>{{re.re4}}</li><li>{{re.re5}}</li>
+        </ul>
+    </div>
+</div>
+ <div class="container center">
+        <a href="#/Aware" class='btn btn-primary prev'>Aware</a>
+        <a href="#/Tcps" class='btn btn-primary next'>Diploma</a>
+    </div>
+</div>
+</div>

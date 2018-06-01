@@ -3,12 +3,14 @@
 <head>
 	<meta charset="utf-8">
 	<title>Saranya Manoharan</title>
-    <!---- CSS Libraries ---->
+    <!---- CSS ---->
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.1.1/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootswatch/4.0.0/journal/bootstrap.min.css">
     <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css'>
-    <link href="https://fonts.googleapis.com/css?family=PT+Serif" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Crimson+Text" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Poiret+One" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Gugi" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">    
     <!----- JavaScript ---->
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/js/bootstrap.min.js">
 	</script>
@@ -17,48 +19,45 @@
     <script src='https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.7/angular-route.min.js'></script>
     <script src='https://cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/0.14.3/ui-bootstrap-tpls.min.js'></script>
     <script src='https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.18/angular-ui-router.min.js'></script>
-    <!----- User Libraries ----->
+    <!----- User files ----->
     <link rel="stylesheet" href="css/index.css">
     <script type="text/javascript" src="js/app.js"></script>
-    
 </head>
 <body>  
     <!--- Navigation Bar ------>
     <div id="headerWrapper" ng-controller="HeaderCntrl"> 
-        <nav class="navbar navbar-expand-lg navbar-dark" ng-controller="NavController">
-            <button class="navbar-toggler" type="button" data-toggle="collapse" aria-expanded="false" aria-label="Toggle navigation" ng-click="isCollapsed = !isCollapsed">
+        <nav class="navbar navbar-expand-lg navbar-light bg-faded" ng-controller="NavController">
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" aria-expanded="false" aria-label="Toggle navigation" ng-click="isCollapsed = !isCollapsed">
                 <span class="navbar-toggler-icon"></span>
             </button>
           <div class="collapse navbar-collapse" ng-class="isCollapsed ? 'collapse' : 'in'">
-            <ul class="navbar-nav mr-auto">
-              <li class="nav-item active">
-                <a class='nav-link' ui-sref="Home">Home</a>
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class='nav-link' ui-sref="Home">INTRO</a>
               </li>
               <li class="nav-item">
-                <a class='nav-link' ui-sref="Experience">Experience</a>
+                <a class='nav-link' ui-sref="Projects">CODE</a>
               </li>
               <li class="nav-item">
-                <a class='nav-link' ui-sref="Projects">Projects</a>
-              </li>
-              <li class="nav-item">
-                <a class='nav-link' ui-sref="IndepProjects">Independent Projects</a>
-              </li>
-              <li class="nav-item">
-                <a class='nav-link' ui-sref="About">About</a>
-              </li>
-              <li class="nav-item">
-                <a class='nav-link' ui-sref="Contact">Contact</a>
+                <a class='nav-link' ui-sref="About">ABOUT</a>
               </li>
             </ul>
           </div>
         </nav>
     </div>
-     <!------- Different Views ----->
-    <div ui-view></div>
-    <hr>
+    <!------- Different Views ----->
+    <div ui-view autoscroll='true'>
+    </div>
+    <!--- Footer --->
     <div class='footer-class'>
+         <div class='center footer row'>
+            <div class='col'>
+                <a href='https://www.linkedin.com/in/saranyamanoharan/'><i class="fa fa-linkedin-square fa-3x"></i></a>
+                <a href='https://github.com/Sachim89'><i class="fa fa-github fa-3x" aria-hidden="true"></i></a>
+            </div>
+        </div>
         <div class='col'>
-            <p class='copyright'>&copy; Saranya Manoharan</p>
+            <p class='copyright'>&copy; 2018 Saranya Manoharan</p>
         </div>
     </div>
 </body>

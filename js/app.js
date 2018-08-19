@@ -100,7 +100,7 @@ app.controller('ExpCntrl',['$scope','$location', function($scope, $location) {
         $scope.cognizant.summary = 'In 2012, I entered into professional environment from being a fresh graduate which helped me to shape my experience. As Programmer Analyst in Cognizant Technology Solutions, I received rigorous training in building web applications in .NET framework and I developed user interface for Online Recruitment Portal (mini project) using ASP.NET and C#.';
         
         $scope.cognizant_exp = [
-            {title: 'Programmer Analyst', company: 'Cognizant Technology Solutions, India', year: 'December 2012 - Sep 2015',
+            {title: 'Programmer Analyst', company: 'Cognizant Technology Solutions, India', year: 'December 2012 - May 2013',
              team: '.NET developer'}];
          $scope.cognizant_resp = [
             {

@@ -100,15 +100,16 @@ app.controller('ExpCntrl',['$scope','$location', function($scope, $location) {
         $scope.cognizant.summary = 'In 2012, I entered into professional environment from being a fresh graduate which helped me to shape my experience. As Programmer Analyst in Cognizant Technology Solutions, I received rigorous training in building web applications in .NET framework and I developed user interface for Online Recruitment Portal (mini project) using ASP.NET and C#.';
         
         $scope.cognizant_exp = [
-            {title: 'Programmer Analyst', company: 'Cognizant Technology Solutions, India', year: 'December 2012 - May 2013',
-             team: '.NET development group'}];
+            {title: 'Programmer Analyst', company: 'Cognizant Technology Solutions, India', year: 'December 2012 - Sep 2015',
+             team: '.NET developer'}];
          $scope.cognizant_resp = [
             {
-                re1: 'Acquired indepth practical knowledge in .NET framework through training.',
-                re2: 'Designed and implemented web applications using C#.NET and ASP.NET.', 
-                re3: 'Extensively worked on enhancing the the presentation layer of the website using HTML, CSS along with ASP.NET.',
-                re4: 'Involved in developing database in SQL Server by creating Tables, Views and Triggers and integrate them in the applications.',
-                re5: 'Accomplished developing web application for Online Recruitment Portal Project in my training period.'
+                re1: 'Designed and implemented a web application for Online Recruitment Portal in .NET framework using ASP.NET, C#, HTML, CSS, SQL server.',
+                re2: 'Extensively worked on designing and implementing dynamic website using ASP.NET Web forms using drag-and-drop method.', 
+                re3: 'Integrated ASP.NET Server controls to the webpage such as button, textboxes, labels and other familiar controls.',
+                re4: 'Utilized ADO.NET for database connectivity and performed data retrieval, query, storage and manipulation on SQL Server.',
+                re5: 'Involved in writing SQL queries based on Data Definition Language (DDL) for creating and defining database structure and Data Manipulation Language (DML) Statements for managing data within the database.',
+		re6: 'Enhanced the presentation layer of the website using ASP.NET HTML and employed CSS techniques for styling server controls.'    
             }];
     
         /** DIPLOMA CERTIFICATION **/

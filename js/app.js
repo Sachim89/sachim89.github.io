@@ -56,6 +56,11 @@ app.config(['$stateProvider', '$urlRouterProvider','$uiViewScrollProvider', func
             templateUrl: "views/About.html",
             controller: 'AboutCntrl'
 		})
+        .state("Skills",{
+            url: '/Skills',
+            templateUrl: "views/Skills.html",
+            controller: 'SkillsCntrl'
+        })
  
 }]);
 
@@ -257,4 +262,11 @@ app.controller('AboutCntrl',['$scope', function($scope) {
         $scope.about.descrp  = "My name is Saranya Manoharan. I am a Computer Science graduate student from Worcester Polytechnic Institute, Massachusetts. I completed my undergraduate studies from Vellore Institute of Technology, India majoring in MS Software Engineering, which is a 5-year integrated course.";
         $scope.about.descrp_1 = "I have developed an excellent understanding of a wide range of programming languages and tools and have demonstrated this capability throughout my studies. To gain additional exposure, I dedicate myself for learning new technologies and languages and develop new projects, thereby honing my technology skills and building a diversified skill set suitable for a rewarding career.";
         $scope.about.descrp_2 = "With a full-time job in this new-age cutting edge technology field, I would definitely be able to build on my acquired knowledge and walk on a path to achieve a long lasting full-filling career within such field. After appraising my resume, you will definitely see me as an individual with great personality, excellent work ethics and immense potential in an organization.";
+}]);
+
+app.controller('SkillsCntrl',['$scope', function($scope) {
+        $scope.skill = {};
+        $scope.skill.title = "“A dream doesn’t become reality through magic; it takes determination and hard work”";
+        $scope.skill.title_1 = " – Colin Powell.";
+        $scope.skill.title_2 = "I have the determination, the desire and the passion to fulfill my dream. ";
 }]);

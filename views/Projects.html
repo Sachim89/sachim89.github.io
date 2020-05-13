@@ -1,74 +1,54 @@
-<!------ Projects ------>
-<div ng-controller='ProjectCntrl'>    
-<div class='project_experience row'>
-     <div class='project center col-md-12'>
-        <div class='project_heading' >
-            <span class='project_exp_title'>{{project.title}}</span>
-            <div class='project_exp_content'>
-                <span>{{project.tagline}}</span>
+<!--- Projects -->
+<hr>
+<div class='container' ng-controller='ProjectCntrl'>
+    <div class='row'>
+        <span id='project_title'>{{project.title}}</span><br>
+        <span id='project_content'>{{project.tagline}}</span>
+    </div>
+<br><br><hr>
+    <div class='row projects'>
+        <div class='col-md-6'>
+            <i class="fa fa-check-square-o fa-5x" aria-hidden="true"></i>
+            <div class='container preface' ng-repeat='pro in project_1'>
+                <span id='project_name'>{{pro.name}}</span><br>
+                <span id='projects_descp'>{{pro.descrp}}</span>
+            </div>
+        </div>
+        <div class='col-md-6'>
+            <i class="fa fa-check-square-o fa-5x" aria-hidden="true"></i>
+            <div class='container preface' ng-repeat='pro in project_2'>
+                <span id='project_name'>{{pro.name}}</span><br>
+                <span id='projects_descp'>{{pro.descrp}}</span>
+            </div>
+        </div>
+    </div><hr>
+    <div class='row projects'>
+        <div class='col-md-6'>
+            <i class="fa fa-check-square-o fa-5x" aria-hidden="true"></i>
+            <div class='container preface' ng-repeat='pro in project_3'>
+                <span id='project_name'>{{pro.name}}</span><br>
+                <span id='projects_descp'>{{pro.descrp}}</span>
+            </div>
+        </div>
+        <div class='col-md-6'>
+            <i class="fa fa-check-square-o fa-5x" aria-hidden="true"></i>
+            <div class='container preface' ng-repeat='pro in project_4'>
+                <span id='project_name'>{{pro.name}}</span><br>
+                <span id='projects_descp'>{{pro.descrp}}</span>
             </div>
         </div>
     </div>
 </div>
-    
-<!---- All Projects ---->
-<div class='container'>
-     <!--- 1 --->
-    <div class='row project center content_align' ng-repeat='pro in project_2'>
-        <div class="col-md-6 project_exp_table">
-            <span class='project_exp'>{{pro.name}}</span><br>
-            <span class='projects_descp'>{{pro.year}}</span><br><br>
-            <span class='projects_descp'>{{pro.description}}
-            </span>
-            <a href='https://github.com/Sachim89/Big-Data-Management'><br>
-                <button class='code btn btn-primary'>VIEW CODE</button></a>
-        </div>
-        <div class="col-md-6 project_exp_table">
-            <img src="/css/ProjectB.jpg" class="project_languages">
+<hr>
+<div id=github>
+    <div class='col'>
+        <span>Want to check out more of my projects?<br>Click the button below.</span>
+    </div>
+    <div class='footer'>
+        <div class='col'>
+            <a href='https://github.com/Sachim89'>
+            <button class='btn btn-primary'>
+                <i class="fa fa-github fa-2x" aria-hidden="true"></i></button></a>
         </div>
     </div>
-    
-     <!--- 2 --->
-    <div class='row project center content_align' ng-repeat='pro in project_3'>
-        <div class="col-md-6 project_exp_table">
-            <img src="/css/ProjectC.jpg" class="project_languages">
-        </div>
-        <div class="col-md-6 project_exp_table">
-            <span class='project_exp'>{{pro.name}}</span><br>
-            <span class='projects_descp'>{{pro.year}}</span><br><br>
-            <span class='projects_descp'>{{pro.description}}
-            </span>
-            <a href='https://github.com/Sachim89/MongoDB'><br>
-                <button class='code btn btn-primary'>VIEW CODE</button></a>
-        </div>
-    </div>
-
-    <!--- 3 --->
-    <div class='row project center content_align' ng-repeat='pro in project_4'>
-        <div class="col-md-6 project_exp_table">
-            <span class='project_exp'>{{pro.name}}</span><br>
-            <span class='projects_descp'>{{pro.year}}</span><br><br>
-            <span class='projects_descp'>{{pro.description}}
-            </span>
-            <a href='https://github.com/Sachim89/Data-Science/tree/master/Case%20Study%204'><br>
-                <button class='code btn btn-primary'>VIEW CODE</button></a>
-        </div>
-        <div class="col-md-6 project_exp_table">
-            <img src="/css/ProjectD.jpg" class="project_languages">
-        </div>
-    </div>
-    
-    <!--- 4 --->
-    <div class='row project center content_align' ng-repeat='pro in project_1'>
-        <div class="col-md-6 project_exp_table">
-            <img src="/css/ProjectA.jpg" class="project_languages">
-        </div>
-        <div class="col-md-6 project_exp_table">
-            <span class='project_exp'>{{pro.name}}</span><br>
-            <span class='projects_descp'>{{pro.year}}</span><br><br>
-            <span class='projects_descp'>{{pro.description}}
-            </span>
-        </div>
-    </div>
-    
-</div>
+</div> 
